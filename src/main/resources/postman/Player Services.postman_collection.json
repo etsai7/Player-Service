@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "61db419d-500d-44ea-9fd5-ce943dc4de4e",
+		"name": "Player Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30369962"
+	},
+	"item": [
+		{
+			"name": "Send CSV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Eric Tsai/Programming/Personal/Interview/Intuit/2024/craft-demo/craft-demo/src/main/resources/csvs/Player-1.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/data/csv/upload",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"data",
+						"csv",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All DB Entries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/data/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"data",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Player",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/data/player/aaronha01asdf",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"data",
+						"player",
+						"aaronha01asdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
